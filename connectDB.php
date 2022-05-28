@@ -1,16 +1,16 @@
 <?php
 
-$server_name = 'localhost';
+$server_name = '127.0.0.1';
 $username = 'RWListCN';
-$password = 'DR @ RW-HPS Team !';
-$db_name = 'List';
+$password = 'dhGSLwLDrxmxJPmj';
+$db_name = 'rwlistcn';
 
+global $conn;
 $conn = new mysqli($server_name, $username, $password, $db_name);
 
 if ($conn->connect_error) {
  	return;
 }
-
 
 
 $conn->query('SET NAMES UTF8');
